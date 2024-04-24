@@ -1,0 +1,59 @@
+{
+  "todo": [
+    {
+      "id": "80c6a2c2-e5d7-4d0f-a8c1-047747f2d7b0",
+      "title": "Gallery Opening",
+      "description": "Discover an enchanting evening celebrating the world of art at our exclusive gallery opening."
+    },
+    {
+      "id": "752c42b6-ecb1-4170-8d4b-74329b32d09e",
+      "title": "Innovation Summit",
+      "description": "Engage in a thought-provoking journey of knowledge and collaboration at our Innovation Summit."
+    },
+    {
+      "id": "a4a1c819-13ea-4c82-836e-19a21ee9a8b4",
+      "title": "Empower Your Creativity",
+      "description": "Ignite your creativity and nurture your storytelling skills in our immersive Creative Writing Workshop."
+    },
+    {
+      "id": "68ab7a1a-2d49-46ef-956e-80040d86ff52",
+      "title": "Summer Soiree",
+      "description": "Embrace the tropical vibes and escape to paradise at our Beach Luau Extravaganza."
+    },
+    {
+      "id": "3f56661f-c9c5-4de5-bb3e-670968dd5db0",
+      "title": "Leadership Conference",
+      "description": "Unlock the secrets of effective leadership at our transformative Success Leadership Conference."
+    },
+    {
+      "id": "5dd1c9b3-bf4e-4654-8d48-04d87c1561f1",
+      "title": "Tech Startup Showcase",
+      "description": "Witness the future of technology as innovative startups showcase their groundbreaking ideas."
+    },
+    {
+      "id": "c87f0322-df19-4096-9c3a-6c1226a1b4f1",
+      "title": "Acoustic Garden Concert",
+      "description": "Experience the magic of live music amidst the serene beauty of nature at our Acoustic Garden Concert."
+    },
+    {
+      "id": "63c5c525-939c-4f52-ae5d-38b9d4b4b8ae",
+      "title": "Extreme Adventure Race",
+      "description": "Calling all thrill-seekers! Embark on an adrenaline-pumping journey at our Extreme Adventure Race."
+    },
+    {
+      "id": "40b0ef19-e244-4e0e-9292-37b75f00b726",
+      "title": "Master class",
+      "description": "Today, ethnic motifs are gaining great popularity in the decor of household items, as well as in clothing and interior design."
+    },
+    {
+      "id": "40b0ef19-e244-4e0e-9292-37b75f00g888",
+      "title": "Be Wine Show",
+      "description": "Show will be held under the slogan 'Recovery'. Our task is to prepare the ground for the future. That the cycle of life continues."
+    },
+    {
+      "id": "5c979a7f-1c5b-4716-8d8b-68c5934ebd90",
+      "title": "Performance Kitsyunya",
+      "description": "Performance by Kitsyunya (Wild Theater), Kyiv Academic Theater of Drama and Comedy on the left bank of the Dnipro River."
+    }
+  ]
+}

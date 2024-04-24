@@ -1,0 +1,31 @@
+.navtabs {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.tabs {
+    display: flex;
+    gap: 40px;
+    align-items: stretch;
+    transition: all 0.2s ease;
+
+    :hover, :focus {
+    color: #33c9dc;
+    }
+}
+
+.active {
+  padding-bottom: 5px;
+  border-bottom: 1px dashed #ffc400;
+}
+
+.tabs > li{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.button {
+    margin-left: auto;
+}
