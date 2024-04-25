@@ -10,10 +10,9 @@
 <b>Currently, the site allows you to perform the following actions:</b>
 * Viewing the available tasks
 * Delete completed tasks
-* The group completed tasks and viewed them 
+* Group completed tasks and viewed them 
 * Delete a completed task permanently from the app
-* Responsive design
-The website has been developed with a responsive design that ensures compatibility with all types of devices, including mobile phones, tablets and desktops. This ensures a seamless user experience regardless of the device they are using.
+* Responsive design. The website has been developed with a responsive design that ensures compatibility with all types of devices, including mobile phones, tablets and desktops. This ensures a seamless user experience regardless of the device they are using.
 
 ## Live page
 The live page for this project is available via the following link: https://todo-list-app-9pn0.onrender.com
@@ -39,7 +38,7 @@ The following technologies were used in the development of this application:
 
 **4. Run Project**
 * `npm start`
- <br>
 
 ##  Additional Information
 For additional information or assistance with using the application, please contact the author via <a href="mailto:kateriinag@gmail.com">email</a> or using website <a href='https://ostrynska-kateryna.netlify.app/contact'>contact form</a>.
+<br>
