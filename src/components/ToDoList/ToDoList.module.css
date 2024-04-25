@@ -1,6 +1,6 @@
 .list {
   display: grid;
-  justify-content: center;
+  justify-items: center;
   align-items: stretch;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
@@ -27,10 +27,10 @@
 }
 
 .notification {
-  width: 320px;
+  width: 300px;
   margin: 0 auto;
-  padding-top: 40vh;
-  padding-bottom: 40vh;
+  padding-top: 35vh;
+  padding-bottom: 35vh;
 }
 
 .notification > p {

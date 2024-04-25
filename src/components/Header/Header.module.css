@@ -13,7 +13,6 @@
   transition: var(--transition);
   gap: 15px;
   background-color: var(--bg);
-  height: 5vw;
 }
 
 .links {
