@@ -8,16 +8,16 @@
     display: flex;
     gap: 40px;
     align-items: stretch;
-    transition: all 0.2s ease;
+    transition: var(--transition);
 
     :hover, :focus {
-    color: #33c9dc;
+    color: var(--hover);
     }
 }
 
 .active {
-  padding-bottom: 5px;
-  border-bottom: 1px dashed #ffc400;
+    padding-bottom: 5px;
+    border-bottom: 1px dashed var(--accent-primary);
 }
 
 .tabs > li{

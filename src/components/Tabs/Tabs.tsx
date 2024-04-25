@@ -1,6 +1,8 @@
 import React from 'react';
+
 import { RiDashboardFill } from 'react-icons/ri';
 import { MdFolderDelete } from "react-icons/md";
+
 import styles from './Tabs.module.css';
 
 interface TabsProps {

@@ -1,5 +1,7 @@
 import React from "react";
+
 import { FaTelegramPlane, FaInstagram, FaLinkedin } from "react-icons/fa";
+
 import styles from "./Footer.module.css";
 
 const Footer: React.FC = () => {

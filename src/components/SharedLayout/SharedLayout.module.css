@@ -1,15 +1,24 @@
-.container {
-    max-width: 960px;
+.loading, .notFound {
+    width: 270px;
     margin: 0 auto;
-    padding: 0 16px;
+    padding-top: 40vh;
+    padding-bottom: 40vh;
+
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    font-weight: 900;
+    font-size: 20px;
+    letter-spacing: .06em;
+    text-transform: uppercase;
 }
 
-.header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 12px;
-    padding: 8px 0;
-    margin-bottom: 16px;
-    border-bottom: 1px solid black;
+@media screen and (min-width: 780px) {
+    .loading {
+        width: 580px;
+    }
+    .notFound {
+        width: 580px;
+    }
 }
+

@@ -6,8 +6,8 @@
   height: 5vw;
 }
 
-.footer >p {
-  color: rgb(199, 199, 199);
+.footer > p {
+  color: var(--grey);
 }
 
 .right {
@@ -20,11 +20,11 @@
 .links > a {
   text-decoration: none;
   text-transform: uppercase;
-  color: white;
+  color: var(--white);
   font-size: 15px;
   transition: all 0.2s ease;
 }
 
 a:hover {
-  color: #33c9dc;
+  color: var(--hover);
 }

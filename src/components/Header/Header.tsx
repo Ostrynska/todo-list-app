@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
-import { Link, useLocation } from "react-router-dom";
-import styles from "./Header.module.css";
 
+import { Link, useLocation } from "react-router-dom";
+
+import styles from "./Header.module.css";
 
 const Header: React.FC = () => {
   const loc = useLocation().pathname;

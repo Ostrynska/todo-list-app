@@ -1,4 +1,5 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
+
 import todoList from '../../db/todo-list.json'
 
 export interface Todo {
@@ -26,11 +27,11 @@ const todosSlice = createSlice({
   initialState,
   reducers: {
     removedToDo(state, action: PayloadAction<string>) {
-       const removedTodo = state.todos.find(todo => todo.id === action.payload);
-      if (removedTodo) {
-        state.removed.push(removedTodo);
-        state.todos = state.todos.filter(todo => todo.id !== action.payload);
-      }
+      const removedTodo = state.todos.find(todo => todo.id === action.payload);
+        if (removedTodo) {
+          state.removed.push(removedTodo);
+          state.todos = state.todos.filter(todo => todo.id !== action.payload);
+        }
     },
     deleteFromRemoved(state, action: PayloadAction<string>) {
       state.removed = state.removed.filter(todo => todo.id !== action.payload);
@@ -40,4 +41,5 @@ const todosSlice = createSlice({
 
 
 export const { removedToDo, deleteFromRemoved } = todosSlice.actions;
+
 export default todosSlice.reducer;

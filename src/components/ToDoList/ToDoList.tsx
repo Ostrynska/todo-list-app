@@ -25,7 +25,7 @@ return (
                 ))}
             </ul>
         ) : (
-            <div className={styles.notification}><p className={styles.notificationText}>Your 🖇️To-Do List is empty now</p><p className={styles.notificationText}>Please wait for our new update and add your new important tasks</p></div>
+            <div className={styles.notification}><p>Your 🖇️To-Do List is empty now</p><p>Please wait for our new update and add your new important tasks</p></div>
         )}
     </>
 );

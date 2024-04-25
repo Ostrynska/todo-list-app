@@ -1,10 +1,10 @@
 .card {
     position: relative;
     width: 250px;
-    background-color: #292B31;
+    background-color: var(--card-bg);
     border-radius: 12px;
     padding: 20px;
-    transition: all 0.6s cubic-bezier(0.55, 0, 0.1, 1) 0s;
+    transition: all 0.6s var(--transition-cubic);
     cursor: pointer;
 }
 
@@ -15,16 +15,16 @@
 }
 
 .card:hover{
-box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(178, 178, 178, 0.747) 0px 0px 0px 1px;
- }
+  box-shadow: var(--box-shadow);
+}
 
 .card > .button:hover {
-        color: #ffc400;
-    }
+    color: var(--accent-primary);
+}
 
 .title {
     font-size: 16px;
-    color: #ffc400;
+    color: var(--accent-primary);
 }
 
 .description {
@@ -37,7 +37,6 @@ box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(178, 178, 178, 0.747) 0p
     margin-top: 20px;
   }
 }
-
 
 .button {
     position: absolute;

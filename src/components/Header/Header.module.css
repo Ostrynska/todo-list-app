@@ -10,9 +10,9 @@
   padding: 20px;
   padding-top: 15px;
   flex-wrap: wrap;
-  transition: all 0.2s ease;
+  transition: var(--transition);
   gap: 15px;
-  background-color: black;
+  background-color: var(--bg);
   height: 5vw;
 }
 
@@ -26,27 +26,25 @@
 .links > a {
   text-decoration: none;
   text-transform: uppercase;
-  color: white;
+  color: var(--white);
   font-size: 15px;
-  transition: all 0.2s ease;
+  transition:  var(--transition);
 }
 
 a:hover {
-  color: #33c9dc;
+  color: var(--hover);
 }
 
 .logo {
-  font-weight: 600;
+  font-weight: 800;
   text-transform: uppercase;
-  color: #33c9dc;
+  color: var(--accent-second);
   font-size: 18px;
 }
 
-
-
 .active {
   padding-bottom: 5px;
-  border-bottom: 1px dashed #ffc400;
+  border-bottom: 1px dashed var(--accent-primary);
 }
 
 @media (max-width: 768px) {
