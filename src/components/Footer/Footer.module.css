@@ -1,0 +1,27 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.links,
+.right {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.links > a,
+.right > a,
+.logo > a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  font-size: 15px;
+  transition: all 0.2s ease;
+}
+
+a:hover {
+  color: #33c9dc;
+}
