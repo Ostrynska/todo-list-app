@@ -1,11 +1,15 @@
 .footer {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 20px;
   height: 5vw;
 }
 
-.links,
+.footer >p {
+  color: rgb(199, 199, 199);
+}
+
 .right {
   display: flex;
   align-items: center;
@@ -13,9 +17,7 @@
   gap: 15px;
 }
 
-.links > a,
-.right > a,
-.logo > a {
+.links > a {
   text-decoration: none;
   text-transform: uppercase;
   color: white;

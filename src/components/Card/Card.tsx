@@ -26,7 +26,7 @@ const Card: React.FC<CardProps> = ({ id, title, description }) => {
             onMouseEnter={() => setIsHovered(true)} 
             onMouseLeave={() => setIsHovered(false)}
         >
-            <h2 className={styles.title}>{title}</h2>
+            <h2 className={styles.title}>🖇️ {title}</h2>
             <p className={styles.description}>{description}</p>
             {isHovered && (
                 <button className={styles.button} type='button'

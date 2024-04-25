@@ -4,7 +4,7 @@
     justify-content: center;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1400px) {
   .navtabs {
     justify-content: space-between;
   }

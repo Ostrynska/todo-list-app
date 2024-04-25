@@ -25,13 +25,8 @@ const Header: React.FC = () => {
 
   return (
     <header
-      className={styles.header}
-    >
-      <div className={styles.logo}>
-        <Link to="/">
-          <p>To-do List</p>
-        </Link>
-      </div>
+      className={styles.header}>
+      <p className={styles.logo}>To-do List</p>
       <div className={styles.links}>
         <Link className={loc === "/" ? styles.active : ""} to="/">
           Home

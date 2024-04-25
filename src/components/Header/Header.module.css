@@ -16,17 +16,14 @@
   height: 5vw;
 }
 
-.links,
-.right {
+.links {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
   gap: 15px;
 }
 
-.links > a,
-.right > a,
-.logo > a {
+.links > a {
   text-decoration: none;
   text-transform: uppercase;
   color: white;
@@ -37,6 +34,15 @@
 a:hover {
   color: #33c9dc;
 }
+
+.logo {
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #33c9dc;
+  font-size: 18px;
+}
+
+
 
 .active {
   padding-bottom: 5px;
