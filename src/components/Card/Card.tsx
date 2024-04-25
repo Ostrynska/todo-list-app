@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
+import { useDispatch } from 'react-redux';
 import { TiDelete } from "react-icons/ti";
 import styles from './Card.module.css';
+import {removeFromList} from '../../redux/todos/slice'; 
 
 interface CardProps {
     id: string;
@@ -8,18 +10,13 @@ interface CardProps {
     description: string;
 }
 
-interface ITodo {
-    id: string;
-    text: string;
-}
+const Card: React.FC<CardProps> = ({ id, title, description }) => {
+    const dispatch = useDispatch();
 
-const Card: React.FC<CardProps> = ({ id, title, description }) =>
-{
     const [isHovered, setIsHovered] = useState(false);
-    const [todos, setTodos] = useState<ITodo[]>([]);
 
-    const deleteTodo = (idToDelete: string): void => {
-        setTodos(prevTodos => prevTodos.filter(todo => todo.id !== idToDelete));
+    const handleDeleteTodo = (): void => {
+        dispatch(removeFromList(id));
     };
 
     return (
@@ -32,7 +29,7 @@ const Card: React.FC<CardProps> = ({ id, title, description }) =>
             <h2 className={styles.title}>{title}</h2>
             <p className={styles.description}>{description}</p>
             {isHovered && (
-                <button className={styles.button} type='button' onClick={(): void => deleteTodo(id)}>
+                <button className={styles.button} type='button' onClick={handleDeleteTodo}>
                     <TiDelete size={20}/>
                 </button>
             )}

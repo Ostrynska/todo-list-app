@@ -1,19 +1,20 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { selectTodoList } from '../../redux/todos/selectors';
+
 import Card from '../Card/Card';
-import todoList from '../../db/todo-list.json'
+
 import styles from './ToDoList.module.css';
 
 const ToDoList: React.FC = () => {
-    const [data, setData] = useState<any[]>([]);
+    const todoList = useSelector(selectTodoList);
 
-    useEffect(() => {
-        setData(todoList.todo);
-    }, []);
-
+    console.log(todoList);
+    
     return (
         <>
             <ul className={styles.list}>
-                {data.map((item: any) => (
+                {todoList.map((item: any) => (
                     <Card key={item.id} id={item.id} title={item.title} description={item.description} />
                 ))}
             </ul>
