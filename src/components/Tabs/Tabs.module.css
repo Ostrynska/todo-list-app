@@ -4,12 +4,6 @@
     justify-content: center;
 }
 
-@media screen and (min-width: 1400px) {
-  .navtabs {
-    justify-content: space-between;
-  }
-}
-
 .tabs {
     display: flex;
     gap: 40px;
