@@ -5,6 +5,7 @@ import styles from "./Header.module.css";
 
 const Header: React.FC = () => {
   const loc = useLocation().pathname;
+  // eslint-disable-next-line
   const [show, setShow] = useState(false);
 
   useEffect(() => {

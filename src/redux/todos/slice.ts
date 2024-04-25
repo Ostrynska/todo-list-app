@@ -1,5 +1,5 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
-import { RootState } from '../store';
+import todoList from '../../db/todo-list.json'
 
 export interface Todo {
   id: string;
@@ -9,12 +9,14 @@ export interface Todo {
 
 interface TodosState {
   todos: Todo[];
+  removed: Todo[];
   loading: boolean;
   error: string | null;
 }
 
 const initialState: TodosState = {
-  todos: [],
+  todos: todoList.todo,
+  removed: [],
   loading: false,
   error: null,
 };
@@ -23,14 +25,19 @@ const todosSlice = createSlice({
   name: 'todos',
   initialState,
   reducers: {
-    removeFromList(state, action: PayloadAction<string>) {
-      state.todos = state.todos.filter(todo => todo.id !== action.payload);
+    removedToDo(state, action: PayloadAction<string>) {
+       const removedTodo = state.todos.find(todo => todo.id === action.payload);
+      if (removedTodo) {
+        state.removed.push(removedTodo);
+        state.todos = state.todos.filter(todo => todo.id !== action.payload);
+      }
     },
-    clearRemoved(state) {
-      state.todos = [];
+    deleteFromRemoved(state, action: PayloadAction<string>) {
+      state.removed = state.removed.filter(todo => todo.id !== action.payload);
     },
   },
 });
 
-export const { removeFromList, clearRemoved } = todosSlice.actions;
+
+export const { removedToDo, deleteFromRemoved } = todosSlice.actions;
 export default todosSlice.reducer;
