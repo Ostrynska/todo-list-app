@@ -1,0 +1,30 @@
+.wrapp {
+  margin: 0 auto;
+  padding: 0 20px;
+  min-height: 90vh;
+}
+
+@media screen and (min-width: 576px) {
+  .wrapp {
+    padding: 0;
+    max-width: 540px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .wrapp {
+    max-width: 720px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .wrapp {
+    max-width: 1200px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .wrapp {
+    max-width: 1400px;
+  }
+}

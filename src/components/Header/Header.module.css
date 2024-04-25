@@ -12,6 +12,8 @@
   flex-wrap: wrap;
   transition: all 0.2s ease;
   gap: 15px;
+  background-color: black;
+  height: 5vw;
 }
 
 .links,

@@ -1,7 +1,13 @@
 .navtabs {
     display: flex;
     gap: 20px;
+    justify-content: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .navtabs {
     justify-content: space-between;
+  }
 }
 
 .tabs {

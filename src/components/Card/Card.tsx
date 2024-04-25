@@ -32,7 +32,7 @@ const Card: React.FC<CardProps> = ({ id, title, description }) => {
                 <button className={styles.button} type='button'
                     onClick={handleDeleteTodo}
                 >
-                    <TiDelete size={20}/>
+                    <TiDelete size={24}/>
                 </button>
             )}
         </li>

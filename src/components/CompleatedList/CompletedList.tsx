@@ -9,14 +9,11 @@ const CompletedList: React.FC = () =>
 {
     const removedList = useSelector(selectRemovedList);
     return (
-        <>
-            <div>CompletedList</div>
             <ul className={styles.list}>
                 {removedList.map((item: any) => (
                     <Card key={item.id} id={item.id} title={item.title} description={item.description} />
                 ))}
             </ul>
-        </>
     );
 };
 
